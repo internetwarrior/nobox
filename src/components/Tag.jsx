@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Add from "../static/svg/add.svg";
 import Remove from "../static/svg/remove.svg";
+
 function Tag(props) {
   const [active, setActive] = useState(false);
 
@@ -19,7 +20,7 @@ function Tag(props) {
       ) : (
         <img src={Remove} alt="" srcset="" />
       )}
-      <div className=" pr-3">{props?.name}</div>
+      <div className=" pr-3">{props.name}</div>
     </button>
   );
 }

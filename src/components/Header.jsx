@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const [toggleSide, setToggleSide] = useState(false);
+  
   const toggleFunc = () => {
     setToggleSide((prev) => !prev);
     console.log("hey");
