@@ -11,6 +11,7 @@ import Profile from "../pages/profile/Profile";
 import  Language  from "../pages/lang/language";
 import  Create  from "../pages/Create";
 import NotRegistered from "./register/NotRegistered";
+import { SignIn } from "./register/SignIn";
 
 export const Layout = () => {
   return (
@@ -28,6 +29,8 @@ export const Layout = () => {
         <Route path="/profile" element={<Profile />} />
         <Route path="/reklama" element={<Advertisement />} />
         <Route path="/NotRegistered" element={<NotRegistered/>}/>
+        <Route path="/signIn" element={<SignIn/>}/>
+
       </Routes>
     </>
   );

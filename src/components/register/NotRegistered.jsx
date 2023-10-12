@@ -51,7 +51,7 @@ const NotRegistered = () => {
 <div>
 <p>Bishkek 2023</p>
       <p>noboxkg@gmail.com</p>
-      <p>all right reserved</p>
+      <span className={scss.reserved}>all right reserved</span>
 </div>
    
     </div>
