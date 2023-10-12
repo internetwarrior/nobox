@@ -10,11 +10,12 @@ import ErrorPage from "../pages/lang/ErrorPage";
 import Profile from "../pages/profile/Profile";
 import  Language  from "../pages/lang/language";
 import  Create  from "../pages/Create";
+import NotRegistered from "./register/NotRegistered";
 
 export const Layout = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       {/* <Sidebar /> */}
       <MainButton />
       <Routes>
@@ -26,6 +27,7 @@ export const Layout = () => {
         <Route path="*" element={<ErrorPage />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/reklama" element={<Advertisement />} />
+        <Route path="/NotRegistered" element={<NotRegistered/>}/>
       </Routes>
     </>
   );
