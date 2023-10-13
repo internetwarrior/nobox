@@ -15,7 +15,7 @@ const LoginPage = () => {
       </div>
       <div>
         <label htmlFor=""> пароль</label>
-        <input placeholder="password" type="text" name="" id="" />
+        <input className={scss.password} placeholder="password" type="text" name="" id="" />
       </div>
       </div>
     

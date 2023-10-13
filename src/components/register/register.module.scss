@@ -50,6 +50,7 @@
   align-items: center;
   gap: 30px;
   padding: 30px;
+
 }
 .downPart {
   display: flex;
@@ -78,6 +79,14 @@
   display: flex;
 
   gap: 10px;
+}
+.password[type="text"] {
+  padding-left: 20px; // Оставьте достаточно места слева для иконки
+  background-image: url('../../static//icons/Vector.svg'); // Путь к изображению вашей иконки
+  background-size: 16px; // Размер иконки
+  background-repeat: no-repeat;
+  background-position: right 10px center; // Позиция иконки относительно правого края
+  padding-left: 10px; // Позиция иконки относительно левого края
 }
 
 
