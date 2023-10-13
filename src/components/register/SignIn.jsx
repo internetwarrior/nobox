@@ -1,6 +1,5 @@
 import React from "react";
 import arrow from "../../static/svg/arrow.svg";
-import google from "../../static/icons/free-icon-google-symbol-2875404 1.svg";
 import checkMark from "../../static/icons/check mark.svg";
 import scss from "./register.module.scss";
 
@@ -20,7 +19,7 @@ export const SignIn = () => {
         </div>
         <div>
           <label htmlFor="">Электронная почта</label>
-          <input placeholder="example@gmail.com" type="text" name="" id="" />
+          <input placeholder="example@gmail.com" type="email" name="" id="" />
         </div>
         <div>
           <label htmlFor="">Номер телефона</label>
@@ -28,7 +27,7 @@ export const SignIn = () => {
         </div>
         <div>
           <label htmlFor="">Придумайте пароль</label>
-          <input placeholder="Пароль" type="text" name="" id="" />
+          <input placeholder="password" type="text" name="" id="" />
         </div>
       </div>
 
@@ -36,7 +35,7 @@ export const SignIn = () => {
         <div>
           <img src={arrow} alt="" />
         </div>
-        <span>или</span>
+        <p>или</p>
         <div>
           <button className={scss.google}>Войти через Google</button>
         </div>
