@@ -1,16 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Search from "../static/svg/search.svg";
 import User_Demo from "../static/svg/user-demo.png";
 import Sidebar from "./Sidebar";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Header() {
   const [toggleSide, setToggleSide] = useState(false);
-  
+
   const toggleFunc = () => {
     setToggleSide((prev) => !prev);
-    console.log("hey");
   };
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setToggleSide(false);
+  }, [location]);
 
   return (
     <header className=" w-full px-[20px] mb-[40px] mt-[20px] flex gap-[10px] items-center">

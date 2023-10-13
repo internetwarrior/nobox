@@ -2,6 +2,7 @@ import React from "react";
 import arrow from "../../static/svg/arrow.svg";
 import checkMark from "../../static/icons/check mark.svg";
 import scss from "./register.module.scss";
+import { Link } from "react-router-dom";
 
 export const SignIn = () => {
   return (
@@ -49,8 +50,17 @@ export const SignIn = () => {
           </span>
         </div>
         <div>
-          <span>
-            У вас уже есть аккаунт?<span className={scss.SignIn}>Войти?</span>{" "}
+          <span
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            У вас уже есть аккаунт?
+            <Link to={"/login"} className={scss.SignIn}>
+              Войти
+            </Link>{" "}
           </span>
         </div>
       </div>

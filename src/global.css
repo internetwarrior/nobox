@@ -5,8 +5,29 @@
 .grid-full {
   grid-column: 1/-1;
 }
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 8px; /* height of horizontal scrollbar ← You're missing this */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 66, 105, 0.05);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(76, 76, 64, 0.1);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

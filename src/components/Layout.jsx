@@ -10,17 +10,17 @@ import ErrorPage from "../pages/lang/ErrorPage";
 import Profile from "../pages/profile/Profile";
 import Language from "../pages/lang/language";
 import Create from "../pages/Create";
-import NotRegistered from "./register/NotRegistered";
 import { SignIn } from "./register/SignIn";
 import LoginPage from "./register/Login";
 import { ForgotPassword } from "./register/ForgotPassword";
 import ChangePassword from "./register/ChangePassword";
+import Sidebar from "./Sidebar";
 
 export const Layout = () => {
   return (
     <>
-      {/* <Header /> */}
-      {/* <Sidebar /> */}
+      <Header />
+      <Sidebar />
       <MainButton />
       <Routes>
         <Route path="/" element={<Main />} />
@@ -31,10 +31,9 @@ export const Layout = () => {
         <Route path="*" element={<ErrorPage />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/reklama" element={<Advertisement />} />
-        <Route path="/not-registered" element={<NotRegistered />} />
         <Route path="/sign-up" element={<SignIn />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/recover-password" element={<ForgotPassword />} />
         <Route path="/change-password" element={<ChangePassword />} />
       </Routes>
     </>

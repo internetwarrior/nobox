@@ -1,47 +1,104 @@
-import React from "react";
-import Main from "../static/svg/main_nav.svg";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import nobox from "../static/svg/nobox.svg";
+import home from "../static/icons/Home Smile.svg";
+import user from "../static/icons/User Circle.svg";
+import signIn from "../static/icons/User Plus Rounded.svg";
+import news from "../static/icons/Dialog.svg";
+import p from "../static/icons/Documents Minimalistic.svg";
+import checked from "../static/icons/Clipboard Check.svg";
+import scss from "./register/register.module.scss";
+import { Link, useLocation } from "react-router-dom";
+
 function Sidebar(props) {
   return (
     <>
       {props.toggle && (
-        <div
-          className="fixed top-0 right-0 h-full z-10 w-full"
-          onClick={() => {
-            setTimeout(() => {
-              props.unToggle();
-            }, 300);
-          }}
-        >
-          <div className=" absolute  h-full gap-6 z-20 w-[284px] right-0 bg-white rounded-md flex flex-col shadow top-0 py-[34px] pl-[20px] pr-[56px] ">
-            <div className="flex flex-col flex-grow">
-              <div className=" flex gap-[8px]">
-                <img src={Main} alt="" srcset="" />
-                <Link
-                  to={"/"}
-                  className=" w-full bg-yellow-200 py-2 px-3 rounded-md"
-                >
-                  Главная
-                </Link>
-              </div>
-            </div>
-            <div>
-              <div className=" flex flex-col gap-[56px]">
-                <div className=" flex gap-[8px]">
-                  <img src={Main} alt="" srcset="" />
-                  <div className=" w-full  py-2 px-3 rounded-md">Демо-мод</div>
-                </div>
-                <div className=" flex flex-col">
-                  <h5>Bishkek 2023</h5>
-                  <h5>nobox-bishkek</h5>
-                  <small className=" text-gray-500">
-                    Весь контент всё ещё в разработке. Это только демонстрация.
-                  </small>
-                </div>
-              </div>
-            </div>
+        <nav className={scss.navigatior}>
+          <div onClick={props.unToggle} className={scss.close}>
+            {" "}
           </div>
-        </div>
+
+          <div className={scss.contayner}>
+            <div>
+              <div className={scss.logo}>
+                <img src={nobox} alt="" />
+              </div>
+
+              <div>
+                <div className={scss.divs}>
+                  <div>
+                    <img src={home} alt="" />
+                  </div>
+
+                  <Link to={"/"}>Главная страница</Link>
+                </div>
+                <div className={scss.divs}>
+                  <div>
+                    <img src={user} alt="" />
+                  </div>
+                  <div>
+                    <Link to={"/profile"}>Личный кабинет</Link>
+                  </div>
+                </div>
+                <div className={scss.divs}>
+                  <div>
+                    <img src={user} alt="" />
+                  </div>
+                  <div>
+                    <Link to={"/profile"}>Сохраненные обявление</Link>
+                  </div>
+                </div>
+                <div className={scss.divs}>
+                  <div>
+                    <img src={signIn} alt="" />
+                  </div>
+
+                  <Link to={"/sign-up"}>Зарегистрироваться</Link>
+                </div>
+                <div className={scss.divs}>
+                  <div>
+                    <img src={signIn} alt="" />
+                  </div>
+
+                  <Link to={"/login"}>Войти</Link>
+                </div>
+              </div>
+            </div>
+            <footer>
+              <div>
+                <div className={scss.divs}>
+                  <div>
+                    <img src={news} alt="" />
+                  </div>
+
+                  <Link to={"/news"}> Новости</Link>
+                </div>
+                <div className={scss.divs}>
+                  <div>
+                    <img src={p} alt="" />
+                  </div>
+                  <Link to={"/"}>
+                    {" "}
+                    Пользовательское
+                    <br />
+                    соглашение
+                  </Link>
+                </div>
+                <div className={scss.divs}>
+                  <div>
+                    <img src={checked} alt="" />
+                  </div>
+                  <Link to={"/"}>Правила проекта</Link>
+                </div>
+              </div>
+              <div>
+                <p>Bishkek 2023</p>
+                <p>noboxkg@gmail.com</p>
+                <span className={scss.reserved}>all right reserved</span>
+              </div>
+            </footer>
+          </div>
+        </nav>
       )}
     </>
   );
