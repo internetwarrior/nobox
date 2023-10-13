@@ -27,15 +27,15 @@ export const Layout = () => {
         <Route path="/detail" element={<Detail />} />
         <Route path="/create" element={<Create />} />
         <Route path="/lang" element={<Language />} />
-        <Route path="/logoPage" element={<Logo />} />
+        <Route path="/logo-page" element={<Logo />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/reklama" element={<Advertisement />} />
-        <Route path="/NotRegistered" element={<NotRegistered />} />
-        <Route path="/signIn" element={<SignIn />} />
+        <Route path="/not-registered" element={<NotRegistered />} />
+        <Route path="/sign-up" element={<SignIn />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/forgotPassword" element={<ForgotPassword />} />
-        <Route path="/changePassword" element={<ChangePassword />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/change-password" element={<ChangePassword />} />
       </Routes>
     </>
   );
