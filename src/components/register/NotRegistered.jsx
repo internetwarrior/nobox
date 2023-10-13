@@ -11,49 +11,65 @@ import scss from "./register.module.scss";
 const NotRegistered = () => {
   return (
     <div className={scss.contayner}>
-   <div>
-       <div className={scss.logo}>
-       <img src={nobox} alt="" />
-      </div>
-      <div className={scss.divs}>
-        <img src={home} alt="" />
-        <p>Главная страница</p>
-      </div>
-      <div className={scss.divs}>
-        <div>
-          <img src={user} alt="" />
+      <div>
+        <div className={scss.logo}>
+          <img src={nobox} alt="" />
         </div>
+
         <div>
-          <p>Личный кабинет</p>
-          <p>Сохраненные обявление</p>
+          <div className={scss.divs}>
+            <div>
+              <img src={home} alt="" />
+            </div>
+            <p>Главная страница</p>
+          </div>
+          <div className={scss.divs}>
+            <div>
+              <img src={user} alt="" />
+            </div>
+            <div>
+              <p>Личный кабинет</p>
+              <p>Сохраненные обявление</p>
+            </div>
+          </div>
+          <div className={scss.divs}>
+            <div>
+              <img src={signIn} alt="" />
+            </div>
+            <p>Зарегистрироваться</p>
+          </div>
         </div>
       </div>
-      <div className={scss.divs}>
-        <img src={signIn} alt="" />
-        <p>Зарегистрироваться</p>
-      </div>
-   </div>
 
       <div>
         <div className={scss.divs}>
-          <img src={news} alt="" />
+          <div>
+            <img src={news} alt="" />
+          </div>
           <p>Новости</p>
         </div>
         <div className={scss.divs}>
-          <img src={p} alt="" />
-          <p>Пользовательское соглашение</p>
+          <div>
+            <img src={p} alt="" />
+          </div>
+          <p>
+            Пользовательское
+            <br />
+            соглашение
+          </p>
         </div>
         <div className={scss.divs}>
-          <img src={checked} alt="" />
+          <div>
+            <img src={checked} alt="" />
+          </div>
           <p>Правила проекта</p>
         </div>
       </div>
-<div>
-<p>Bishkek 2023</p>
-      <p>noboxkg@gmail.com</p>
-      <span className={scss.reserved}>all right reserved</span>
-</div>
-   
+      <div>
+        <p>Bishkek 2023</p>
+        <p>noboxkg@gmail.com</p>
+        <span className={scss.reserved}>all right reserved</span>
+      </div>
     </div>
   );
 };

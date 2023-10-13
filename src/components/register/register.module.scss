@@ -1,6 +1,8 @@
 .contayner {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
   padding: 30px;
   gap: 100px;
   .divs {
@@ -50,6 +52,11 @@
   align-items: center;
   gap: 30px;
   padding: 30px;
+  // .divs {
+  //   display: flex;
+  //   gap: 20px;
+  //   margin-top: 20px;
+  // }
 
 }
 .downPart {
@@ -81,12 +88,12 @@
   gap: 10px;
 }
 .password[type="text"] {
-  padding-left: 20px; // Оставьте достаточно места слева для иконки
-  background-image: url('../../static//icons/Vector.svg'); // Путь к изображению вашей иконки
-  background-size: 16px; // Размер иконки
+  padding-left: 20px; 
+  background-image: url('../../static//icons/Vector.svg'); 
+  background-size: 16px; 
   background-repeat: no-repeat;
-  background-position: right 10px center; // Позиция иконки относительно правого края
-  padding-left: 10px; // Позиция иконки относительно левого края
+  background-position: right 10px center; 
+  padding-left: 10px; 
 }
 
 

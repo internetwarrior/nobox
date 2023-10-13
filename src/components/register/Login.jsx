@@ -1,6 +1,6 @@
 import React from "react";
 import loginImg from "../../static/svg/j.svg";
-import scss from './register.module.scss'
+import scss from "./register.module.scss";
 import arrow from "../../static/svg/arrow.svg";
 import checkMark from "../../static/icons/check mark.svg";
 const LoginPage = () => {
@@ -9,16 +9,22 @@ const LoginPage = () => {
       <img src={loginImg} alt="kk" />
       <p className={scss.register}>Войти в аккаунт</p>
       <div className={scss.wrapper}>
-      <div >
-        <label htmlFor="">Номер телефона</label>
-        <input placeholder="0" type="text" name="" id="" />
+        <div>
+          <label htmlFor="">Номер телефона</label>
+          <input placeholder="0" type="text" name="" id="" />
+        </div>
+        <div>
+          <label htmlFor=""> пароль</label>
+          <input
+            className={scss.password}
+            placeholder="password"
+            type="text"
+            name=""
+            id=""
+          />
+        </div>
       </div>
-      <div>
-        <label htmlFor=""> пароль</label>
-        <input className={scss.password} placeholder="password" type="text" name="" id="" />
-      </div>
-      </div>
-    
+
       <div className={scss.downPart}>
         <div>
           <img src={arrow} alt="" />
@@ -36,9 +42,7 @@ const LoginPage = () => {
             <br /> на обработку персональных данных
           </span>
         </div>
-      
       </div>
-
     </div>
   );
 };
