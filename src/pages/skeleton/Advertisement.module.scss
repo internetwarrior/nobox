@@ -1,0 +1,57 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: auto;
+}
+.advertisement {
+  padding: 7px;
+  background-color: #ffd600;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.wrapperBtn {
+  display: flex;
+  justify-content: space-between;
+
+}
+.card {
+  width: max-content;
+  // display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: auto;
+  padding: 20px;
+
+
+  
+
+  img {
+    width: 100%;
+    // height: 6rem;
+    border-radius: 10px 10px 0 0;
+    
+  }
+}
+.cards {
+  // position: relative;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+
+.title {
+  padding: 10px;
+  font-size: 12px;
+  width: 12rem;
+  .price{
+    display: flex;
+    align-self: flex-end;
+  }
+  .wrapCard{
+    // padding: 20px;
+  }
+}
+
